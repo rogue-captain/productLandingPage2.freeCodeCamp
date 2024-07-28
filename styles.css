@@ -1,0 +1,103 @@
+body {
+  background-image: url('https://imgur.com/9yobGtU.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 10px;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 100;
+  width: 90%;
+  display: flex;
+  background-color: rgba(75, 0, 128, 0.8);
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+#navbar .nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* -- + -- */
+
+#form {
+  background: rgba(75, 0, 128, 0.318);
+  padding: 20px;
+  margin: auto;
+  height: auto;
+  width: 60%;
+  border-radius: 8px;
+}
+
+
+#form input,
+#form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#form button {
+  background-color: deeppink;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#form input:hover {
+  background-color: #c71585;
+}
+
+
+/* Main content */
+
+#main-doc {
+  margin-top: 50px; /* To avoid navbar overlay */
+  padding: 20px;
+}
+
+/* Sections styling */
+.main-section {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 20px;
+  border-radius: 8px;
+}
+
+videoFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  height: auto;
+  width: 60%;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+  }
+  }
