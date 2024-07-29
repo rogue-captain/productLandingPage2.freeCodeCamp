@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page for freeCodeCamp Cert</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header-left">
+        <h3 id="header-company-name">Abyss Properties LLC.</h3>
+        <img id="header-img" src="https://imgur.com/DM33wZD.jpg" alt="Company Logo">
+      </div>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#video">VIDEO</a>
+        <a class="nav-link" href="#form">FORM</a>
+        <a class="nav-link" href="#email">EMAIL</a>
+      </nav>
+    </header>
+
+    <!-- Spacer to offset the height of the fixed header -->
+    <div class="spacer"></div>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <label id="email-label" for="email">E-mail:</label>
+      <input id="email" name="email" type="email" placeholder="enter email here please" required>
+      <input id="submit" type="submit">
+    </form>
+
+    <div id="text-box">
+      <h2>This is a filler paragraph</h2>
+      <p>Here is a paragraph of useless information because it is intended as filler material for this website so that I can practice layout and CSS.
+        Not gonna lie, I am struggling with the CSS despite the syntax being easy, telling a computer exactly what you want and how you want it is
+        more tedious and detail-oriented than one initially would anticipate. Sure, Object-Oriented Programming is more difficult because it is essentially
+        pure logic, but styling is visual logic and empathy for a machine? Meh.
+      </p>
+    </div>
+
+    <div id="videoFrame">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y50SoNOKzAI?si=h62giQ_AiJpuY6bD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div id="footer">
+      <h3>This is a footer</h3>
+      <p>I'm not sure why I put this here</p>
+    </div>
+  </body>
+</html>
