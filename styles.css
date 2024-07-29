@@ -8,28 +8,32 @@
 
 body {
   /* background-image: url('https://imgur.com/9yobGtU.jpg'); */
-  background-color: aliceblue;
+  background-color: rgb(36, 109, 172);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
-  padding: 10px;
+  padding: 5px;
 }
 
 
 /* Header styling */
 
 header {
+  position: fixed;
   display: flex;
   justify-content:space-around;
   align-items: center;
   gap: 20px;
   height: 10vh;
+  width: 96vw;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0 20px;
   padding: 1%;
   border-radius: 8px;
   box-sizing: border-box;
-  box-shadow:rgba(75, 0, 128, 0.318)
+  box-shadow:rgba(75, 0, 128, 0.318);
+  top: 0;
+  z-index: 1000;
 }
 
 .header-left {
@@ -78,15 +82,21 @@ header {
     text-decoration: underline;
   }
 
+/* -- + Form + -- */
+
+.spacer {
+  height: 10vh;
+}
+
 
 /* -- + Form + -- */
 
 #form {
-    background: rgba(75, 0, 128, 0.318);
+    /* background: rgba(75, 0, 128, 0.318); */
     padding: 20px;
     margin: auto;
     height: auto;
-    width: 60vw;
+    width: 90vw;
     border-radius: 8px;
   }
   
@@ -112,14 +122,25 @@ header {
   /* Filler Text Box */
 
   #text-box {
-    display: flex;
-    /* align-items: center; */
+    /* display: flex; */
+    /* align-items: ; */
     height:auto;
-    width: 60vw;
-    margin: auto;
+    width: 90vw;
+    margin: 20px auto;
     padding: 10px;
-    background: rgba(75, 0, 128, 0.318);
+    /* background: rgba(75, 0, 128, 0.318); */
     border-radius: 8px;
+    justify-content:space-around;
+    gap: 10px;
+  }
+
+  #text-box h2 {
+    text-align: center;
+  }
+  
+  #text-box p {
+    text-align: justify;
+    padding: 20px;
   }
 
   /* Video frame */
