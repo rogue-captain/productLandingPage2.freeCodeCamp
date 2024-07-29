@@ -143,6 +143,10 @@ header {
     padding: 20px;
   }
 
+  #text-box:hover {
+    background-color: #c71585;
+  }
+
   /* Video frame */
   
 #videoFrame {
