@@ -113,8 +113,13 @@ header {
 
   #text-box {
     display: flex;
-    align-items: baseline;
+    /* align-items: center; */
+    height:auto;
+    width: 60vw;
+    margin: auto;
+    padding: 10px;
     background: rgba(75, 0, 128, 0.318);
+    border-radius: 8px;
   }
 
   /* Video frame */
