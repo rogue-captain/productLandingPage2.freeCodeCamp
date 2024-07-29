@@ -8,7 +8,7 @@
 
 body {
   /* background-image: url('https://imgur.com/9yobGtU.jpg'); */
-  background-color: rgb(36, 109, 172);
+  background-color: rgba(36, 109, 172, 0.128);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
