@@ -1,63 +1,10 @@
 body {
-  background-image: url('https://imgur.com/9yobGtU.jpg');
+  /* background-image: url('https://imgur.com/9yobGtU.jpg'); */
+  background-color: aliceblue;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
-  margin: auto;
   padding: 10px;
-}
-
-#nav-bar {
-  position: fixed;
-  top: 100;
-  width: 90%;
-  display: flex;
-  background-color: rgba(75, 0, 128, 0.8);
-  justify-content: space-around;
-  margin: 10px;
-  border-radius: 8px;
-}
-
-#navbar .nav-link {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-}
-
-#navbar .nav-link:hover {
-  text-decoration: underline;
-}
-
-/* -- + -- */
-
-#form {
-  background: rgba(75, 0, 128, 0.318);
-  padding: 20px;
-  margin: auto;
-  height: auto;
-  width: 60%;
-  border-radius: 8px;
-}
-
-
-#form input,
-#form button {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-#form button {
-  background-color: deeppink;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-#form input:hover {
-  background-color: #c71585;
 }
 
 
@@ -76,17 +23,106 @@ body {
   border-radius: 8px;
 }
 
+/* Header styling */
+
 header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
+  justify-content:space-between;
+  align-items: none;
+  gap: 20px;
+  height: 10vh;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0 20px;
+  padding: 1%;
   border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow:rgba(75, 0, 128, 0.318)
 }
 
-videoFrame {
+.header-left {
+    display: flex;
+    align-items: left;
+    width: 45vw;
+}
+
+#header-company-name {
+    border: solid black 2px;
+    height: 100px;
+    width: 100px;
+
+    flex-grow: 1;
+    text-align: left;
+    font-size: 2vw; /* Relative font size */
+    margin-left: 10px; /* Space between the image and the text */
+}
+
+#header-img {
+    width: 10vw; /* 10% of the viewport width */
+    height: auto;
+    max-height: 90%; /* Ensures the image does not exceed the header height */
+    margin-right: 2%;
+}
+
+/* Nav-Bar styling */
+
+#nav-bar {
+    position: none;
+    top: 100;
+    width: 90%;
+    display: flex;
+    background-color: rgba(75, 0, 128, 0.8);
+    justify-content: space-around;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  #navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  #navbar .nav-link:hover {
+    text-decoration: underline;
+  }
+
+
+/* -- + -- */
+
+#form {
+    background: rgba(75, 0, 128, 0.318);
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    width: 60%;
+    border-radius: 8px;
+  }
+  
+  
+  #form input,
+  #form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #form button {
+    background-color: deeppink;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #form input:hover {
+    background-color: #c71585;
+  }
+
+
+  /* Video frame */
+  
+#videoFrame {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +131,9 @@ videoFrame {
   width: 60%;
 }
 
+
 /* Media query for responsiveness */
+
 @media (max-width: 600px) {
   #navbar {
     flex-direction: column;
